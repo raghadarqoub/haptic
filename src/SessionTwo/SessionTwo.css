@@ -1,0 +1,84 @@
+.haptic-section {
+    background-color: #482F22;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .haptic-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  
+  .haptic-image {
+     /* max-width: 1000px;  */
+      width: 100%; 
+      /* height: auto;
+    object-fit: cover;  */
+  }
+
+  
+  .haptic-content {
+    max-width: 900px;
+  }
+  
+  .main-text {
+    font-family: "FK Roman Standard Light", "FK Roman Standard Light Placeholder", sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    color: #ff6937;
+    margin: 200px 0px 50px 77px;
+    word-break: break-word;
+  }
+
+  .haptic-content2 {
+    font-family: "FK Roman Standard Light", "FK Roman Standard Light Placeholder", sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    color: #91462a;
+    margin: 50px 0px 50px 77px;
+    word-break: break-word;
+  }
+  .haptic-content2:hover{
+    color:#ff6937;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+  @media (max-width: 900px) {
+    .main-text {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .haptic-image {
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .haptic-section {
+      padding: 0;
+    }
+    .main-text {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .haptic-image {
+    max-width: 100%;
+    
+    
+  }
+}

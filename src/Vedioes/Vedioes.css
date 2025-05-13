@@ -1,0 +1,92 @@
+.videos-grid {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: nowrap; 
+  width: 100%;
+  height: 100%;
+}
+
+.video-card {
+  background: #fff;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #eee;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #eee;
+}
+
+.play-btn {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  transition: transform 0.15s;
+}
+.play-btn:hover {
+  transform: scale(1.08);
+}
+
+.video-info {
+  padding: 16px 20px 20px 20px;
+  background: #fff;
+  width: 100%;
+  text-align: left;
+}
+
+.video-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin: 2px 10px 12px 37px;;
+  display: block;
+
+}
+
+.video-name {
+  font-family: "SF Pro Display Medium", "SF Pro Display Medium Placeholder", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+  margin-left: 100px;
+  margin-top: -60px;
+}
+
+.video-title {
+  font-family: "FK Roman Standard Light", "FK Roman Standard Light Placeholder", sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-left: 100px;
+}
+
+@media (max-width: 900px) {
+  .videos-grid {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .video-card {
+    max-width: 90vw;
+  }
+}

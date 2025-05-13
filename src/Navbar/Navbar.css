@@ -1,0 +1,117 @@
+.navbar {
+  background-color: #ff4d12;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-weight: 500;
+}
+
+.nav-button:hover {
+  background-color: #4b5563;
+  color: white;
+}
+
+.nav-button.dark {
+  background-color: #000000;
+  color: white;
+}
+
+.nav-button.selected {
+  background-color: white;
+  color: black;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.icon-plus {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}
+
+.bar {
+  position: absolute;
+  width: 1rem;
+  height: 2px;
+  background-color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.bar1 {
+  transform: rotate(0deg);
+}
+
+.bar2 {
+  transform: rotate(90deg);
+}
+
+.icon-plus.open .bar1 {
+  transform: rotate(45deg);
+}
+
+.icon-plus.open .bar2 {
+  transform: rotate(-45deg);
+}
+
+
+/* src/components/Logo.css */
+.logo {
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #111;
+  font-family: 'Arial', sans-serif;
+  user-select: none;
+
+  /* لجعل اللوجو في الزاوية اليسرى */
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem 2rem;
+}
